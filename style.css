@@ -175,11 +175,6 @@ box-shadow:violet;
 
 /* <h2>--------Question 5--------</h2> */
 
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .order-container {
   max-width: 350px;
