@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS_HW4</title>
+  <link href="style.css" rel="stylesheet" />
+  
+</head>
+<body>
+
+  <!-- https://akanksha-neogcamp.notion.site/CSS-HW-4-f16ce7fb71cc49a9b5eb5db5b35373b5 -->
+  <!-- Create a layout for a contact form that includes fields for name, email, message, and a submit button. The form should be centered horizontally on the page and the fields should be arranged vertically with appropriate spacing between them. The form should also have a label for each field. Create a layout as close to the image shown below. -->
+  <section>
+    <h2>--------Question 1--------</h2>
+    <div class="contact-form responsive">
+      <div>
+        <label for="inputName" >Name:</label> <br />
+        <input type="text" id="inputName" class="form-input" />
+     </div>
+      <div>
+        <label for="inputEmail">Email:</label> <br />
+        <input type="email" id="inputEmail" class="form-input" />
+     </div>
+     <div>
+      <label>Message:</label>
+      <textarea rows="5" cols="40" class="form-textarea"></textarea>
+     </div>
+     <button type="submit" class="submit-btn">Submit</button>
+    </div>
+  </section>
+
+  <!-- Create a layout for a login form that includes input fields for the user's email and password, a "Login" button, and a "Forgot Password?" link. The layout should be centered horizontally on the page, and the input fields and button should be arranged vertically with some spacing between them. Create a layout as close to the image shown below. -->
+
+  <section>
+     <h2>--------Question 2--------</h2>
+     <div class="login-form responsive">
+      <h2>Login</h2>
+      <div class="label-padding">
+        <label>Email</label> <br />
+        <input type="email" class="form-control" />
+      </div>
+
+      <div class="label-padding">
+        <label>Password</label> <br />
+        <input type="password" class="form-control" />
+      </div>
+      <a class="login-a" href="#">Login</a>
+      <a href="#" class="forgot-link">Forgot Password?</a>
+     </div>
+  </section>
+
+  <!-- Create a layout for a photo gallery with a header, a navigation bar, and a grid of photos. The navigation bar should have links to filter the photos by category (no need to code the functionality). The grid of photos should have three columns, with each photo being a square. The layout should be centered horizontally on the page and the cards should not go out of the screen when the screen size is reduced. You can add your own images. Create a layout as close to the image shown below. -->
+
+  <section>
+    <h2>--------Question 3--------</h2>
+    <div class="photo-gallery-container">
+      <h1>Photo Gallery</h1>
+      <nav class="navbar">
+        <ul class="list-group">
+          <li class="list-items link">All</li>
+          <li class="list-items">Nature</li>
+          <li class="list-items">Birds</li>
+          <li class="list-items">Animals</li>
+        </ul>
+      </nav>
+
+      <div class="row">
+
+        <div class="col">
+          <img src="https://placehold.co/100x100?text=Nature" alt="nature image" />
+        </div>
+        <div class="col">
+          <img src="https://placehold.co/100x100?text=Birds" alt="birds image" />
+        </div>
+        <div class="col">
+          <img src="https://placehold.co/100x100?text=Animals" alt="animals image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Create a layout for a pricing table that shows three pricing plans side by side, with the plan names, prices, and features listed for each plan. Each plan should have a button for users to sign up for that plan. The layout should be centered horizontally on the page and the price cards should not go out of the screen when the screen size is reduced. Create a layout as close to the image shown below. -->
+
+  <section>
+    <h2>--------Question 4--------</h2>
+    <div class="container-pricing-plan">
+    <div class="row-horizontal">
+      <div class="col-box">
+        <div class="sm-box">
+          1 month Free
+        </div>
+        <h2>Basic Plan</h2>
+        <p class="price-box">$9.99/mo</p>
+        <hr />
+        <p>Ad-free music listening</p>
+        <p>Download 10k songs/device</p>
+        <p>Login from 3 devices</p>
+        <div class="link-margin">
+          <a href="#" class="link-plan">Sign Up</a>
+        </div>
+      </div>
+      <div class="col-box">
+        <div class="sm-box">
+          1 month Free
+        </div>
+        <h2>Pro Plan</h2>
+        <p class="price-box">$19.99/mo</p>
+        <hr />
+        <p>Ad-free music listening</p>
+        <p>Download 20k songs/device</p>
+        <p>Login from 5 devices</p>
+        <div class="link-margin">
+          <a href="#" class="link-plan">Sign Up</a>
+        </div>
+      </div>
+      <div class="col-box">
+        <div class="sm-box">
+          1 month Free
+        </div>
+        <h2>Enterprise Plan</h2>
+        <p class="price-box">$59.99/mo</p>
+        <hr />
+        <p>Ad-free music listening</p>
+        <p>Download 40k songs/device</p>
+        <p >Login from unlimited devices</p>
+        
+        <div class="link-margin">
+          <a href="#" class="link-plan">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Create a layout for Review Order with items, quantity, price, pricing breakdown and a button to place order. Create a layout as close to the image shown below. -->
+  <section>
+    <h2>--------Question 5--------</h2>
+    <div class="card">
+    <div class="order-container">
+      <h2>Review Order</h2>
+
+      <div class="item-header">
+        <span>ITME</span>
+        <span>QTY TOTAL</span>
+      </div>
+
+      <div class="item">
+        <div>
+          <img src="https://placehold.co/50x50" alt="product image" />
+          <p class="item-details">Limited adition cactus print bag 1 litre, Green Color</p>
+        </div>
+        
+        <div class="details">
+          <p>1</p>
+          <p>INR</p>
+          <P>999</P>
+        </div>
+      </div>
+
+      <div class="summary">
+        <span>Subtotal</span>
+        <strong>INR 999</strong>
+      </div>
+
+      <div class="summary">
+        <span>GST</span>
+        <strong>INR 179</strong>
+      </div>
+
+      <div class="summary grand-total">
+        <span>Grand Total</span>
+        <strong>INR 1178</strong>
+      </div>
+
+      <button class="place-order-btn">PLACE ORDER</button>
+      <p class="secure-text">Cart Secured by Razorpay</p>
+    </div>
+  </div>
+  </section>
+</body>
+</html>
+
+
+<!-- <h3>ITEM</h3>
+        <h3>QNT</h3>
+        <h3>TOTAL</h3>
+        <img src="https://placehold.co/50x50" alt="item-image" />
+        1 INR 999
+        <p>Subtotal <strong>INR 999</strong></p>
+        <p>GST <strong>INR 179</strong></p>  
+        <h3>Grand Total <strong>INR 1178</strong></h3> -->
+
+
+        <!-- <div class="order-container">
+          <h2>Review Order</h2>
+  
+          <div class="item-header">
+              <span>ITEM</span>
+              <span>QTY TOTAL</span>
+          </div>
+  
+          <div class="item">
+              <img src="https://via.placeholder.com/50" alt="Product Image">
+              <div class="details">
+                  <p><strong>Limited Edition Cactus Print Bag</strong></p>
+                  <p>1 Litre, Green Color</p>
+              </div>
+              <div class="details">
+                  <p>1</p>
+                  <p><strong>INR 999</strong></p>
+              </div>
+          </div>
+  
+          <div class="summary">
+              <span>Subtotal</span>
+              <strong>INR 999</strong>
+          </div>
+          <div class="summary">
+              <span>GST</span>
+              <strong>INR 179</strong>
+          </div>
+          <div class="summary grand-total">
+              <span>Grand Total</span>
+              <strong>INR 1178</strong>
+          </div>
+  
+          <button class="place-order-btn">PLACE ORDER</button>
+  
+          <p class="secure-text">Cart Secured by Razorpay</p>
+      </div> -->
